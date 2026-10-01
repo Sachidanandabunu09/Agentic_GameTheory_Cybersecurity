@@ -1,0 +1,5 @@
+attack,damage,base_success
+DDoS,6,0.80
+Phishing,7,0.70
+BruteForce,8,0.60
+Malware,10,0.70

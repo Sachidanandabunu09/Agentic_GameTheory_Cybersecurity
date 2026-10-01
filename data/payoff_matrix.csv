@@ -1,0 +1,5 @@
+attack,Firewall,IDS,MFA,Isolation
+DDoS,-2.42,-4.16,-5.4,-3.9
+Phishing,-4.91,-4.23,-2.56,-4.44
+BruteForce,-4.34,-4.16,-1.08,-4.38
+Malware,-5.4,-3.6,-6.9,-2.9

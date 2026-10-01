@@ -1,0 +1,27 @@
+# Single source of truth for the whole project
+seed: 42
+n_rounds: 200          # rounds per simulation run
+n_runs: 50             # independent seeds per experiment (mean +- std)
+
+game:
+  zero_sum: true
+  # Bayesian / prior-weighted game: U'_ij = w_i * U_ij, w_i = n_attacks * p_i
+  # (mean weight = 1, so payoff scale stays comparable across threat states)
+  weighting: normalized_prior
+  tolerance: 1.0e-9
+
+agent:
+  sample_from_mix: true      # sample defense from Nash mix (do NOT argmax)
+  estimate_threat: true      # estimate threat state from observed attacks
+  memory_window: 20          # moving-average window
+  resolve_threshold: 0.10    # re-solve only if threat shift (total variation) > this
+
+threat_states:
+  state_1: {DDoS: 0.60, Phishing: 0.15, BruteForce: 0.20, Malware: 0.05}
+  state_2: {DDoS: 0.15, Phishing: 0.10, BruteForce: 0.65, Malware: 0.10}
+
+paths:
+  data: data/
+  raw: results/raw/
+  figures: results/figures/
+  tables: results/tables/
