@@ -26,3 +26,16 @@ class OracleBestResponse:
     def reset(self, seed=None): pass
     def act(self, obs, true_threat=None): return int(np.argmax(np.asarray(true_threat) @ self.U))
     def update(self, info): pass
+
+
+class MinimaxPolicy:
+    """Static robust baseline: samples from the UNWEIGHTED zero-sum minimax mix (ignores the threat state)."""
+    name = "Minimax(static)"
+    def __init__(self, U):
+        from game_theory.mixed_strategy import solve_zero_sum_lp
+        U = np.asarray(getattr(U, "values", U), dtype=float)
+        self.q = solve_zero_sum_lp(U)[0]
+        self.reset(0)
+    def reset(self, seed=None): self.rng = np.random.default_rng(seed)
+    def act(self, obs, true_threat=None): return int(self.rng.choice(len(self.q), p=self.q))
+    def update(self, info): pass
