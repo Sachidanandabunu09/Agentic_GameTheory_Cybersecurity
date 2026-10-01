@@ -34,4 +34,4 @@ def bayesian_weights(threat, mode="normalized_prior"):
 
 def weighted_payoff(U, threat, mode="normalized_prior"):
     """Bayesian game:  U'_ij = w_i * U_ij"""
-    return U.values * bayesian_weights(threat, mode)[:, None]
+    return np.asarray(getattr(U, "values", U), dtype=float) * bayesian_weights(threat, mode)[:, None]
