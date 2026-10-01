@@ -25,3 +25,9 @@ paths:
   raw: results/raw/
   figures: results/figures/
   tables: results/tables/
+
+environment:
+  attacker: stochastic        # stochastic (follows threat state) | adaptive (learns defender habits)
+  schedule: [state_1, state_2]  # threat states cycled through
+  switch_every: 100            # rounds per threat state
+  adaptive_epsilon: 0.1        # exploration of the adaptive attacker
