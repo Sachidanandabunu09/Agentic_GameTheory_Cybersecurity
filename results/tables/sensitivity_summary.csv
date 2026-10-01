@@ -1,0 +1,2 @@
+level,n_samples,baseline_top_s1,baseline_top_s2,top_defense_unchanged_s1,top_defense_unchanged_s2,mean_tv_s1,p90_tv_s1,mean_tv_s2,p90_tv_s2,mean_value_change_s1,mean_value_change_s2,s1_still_pure,s2_still_pure,adaptation_holds,all_verified
+0.2,500,Firewall,MFA,1.0,1.0,0.00040419884172749975,0.0,0.0706422191048343,0.14221765150280583,0.1581716573709105,0.17380813997626576,0.982,0.356,1.0,True

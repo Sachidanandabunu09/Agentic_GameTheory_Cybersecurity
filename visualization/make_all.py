@@ -4,7 +4,7 @@ Usage (project root):   python -m visualization.make_all
 """
 import os, sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from visualization import payoff_heatmap, strategy_plot, damage_plot, utility_plot
+from visualization import payoff_heatmap, strategy_plot, damage_plot, utility_plot, sensitivity_plot
 
 
 def main(data_dir="data/", tab_dir="results/tables/", raw_dir="results/raw/", fig_dir="results/figures/"):
@@ -21,6 +21,10 @@ def main(data_dir="data/", tab_dir="results/tables/", raw_dir="results/raw/", fi
         strategy_plot.plot_over_time(f"{raw_dir}agent_trace.csv", f"{fig_dir}strategy_over_time.png"),
         utility_plot.plot(f"{tab_dir}experiment_summary.csv", f"{fig_dir}utility_comparison.png"),
     ]
+    if os.path.exists(f"{tab_dir}sensitivity_summary.csv"):
+        out.append(sensitivity_plot.plot(tab_dir, f"{fig_dir}sensitivity.png"))
+    else:
+        print("(skipping sensitivity figure: run  python -m experiments.sensitivity  first)")
     for p in out: print("saved", p)
 
 
