@@ -1,0 +1,5 @@
+defense,cost
+Firewall,0.5
+IDS,0.8
+MFA,0.6
+Isolation,1.5

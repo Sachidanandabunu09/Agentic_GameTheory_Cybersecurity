@@ -1,0 +1,60 @@
+# Events in chronological order
+
+| Round | Event | Detail |
+|---|---|---|
+| 1 | **threat state** | True threat state is now `state_1`: DDoS 0.60, Phishing 0.15, BruteForce 0.20, Malware 0.05 |
+| 1 | **re-solve** | Solve #1. New mix: Firewall 0.11, IDS 0.00, MFA 0.22, Isolation 0.67. Game value -4.07. |
+| 2 | **re-solve** | Solve #2, estimate shifted 0.150. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -4.64. |
+| 3 | **re-solve** | Solve #3, estimate shifted 0.100. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -5.80. |
+| 6 | **re-solve** | Solve #4, estimate shifted 0.167. New mix: Firewall 0.00, IDS 0.00, MFA 0.08, Isolation 0.92. Game value -5.72. |
+| 8 | **re-solve** | Solve #5, estimate shifted 0.121. New mix: Firewall 0.00, IDS 0.00, MFA 0.42, Isolation 0.58. Game value -6.65. |
+| 12 | **re-solve** | Solve #6, estimate shifted 0.121. New mix: Firewall 0.00, IDS 0.00, MFA 0.77, Isolation 0.23. Game value -6.38. |
+| 14 | **re-solve** | Solve #7, estimate shifted 0.110. New mix: Firewall 0.00, IDS 0.00, MFA 0.77, Isolation 0.23. Game value -5.63. |
+| 17 | **re-solve** | Solve #8, estimate shifted 0.124. New mix: Firewall 0.32, IDS 0.00, MFA 0.68, Isolation 0.00. Game value -5.32. |
+| 25 | **re-solve** | Solve #9, estimate shifted 0.133. New mix: Firewall 0.02, IDS 0.00, MFA 0.17, Isolation 0.82. Game value -4.82. |
+| 28 | **re-solve** | Solve #10, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -5.32. |
+| 31 | **re-solve** | Solve #11, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -6.77. |
+| 34 | **re-solve** | Solve #12, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -8.22. |
+| 38 | **re-solve** | Solve #13, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -9.67. |
+| 41 | **re-solve** | Solve #14, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -8.22. |
+| 44 | **re-solve** | Solve #15, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -6.77. |
+| 47 | **re-solve** | Solve #16, estimate shifted 0.125. New mix: Firewall 0.17, IDS 0.00, MFA 0.00, Isolation 0.83. Game value -6.09. |
+| 50 | **re-solve** | Solve #17, estimate shifted 0.125. New mix: Firewall 0.70, IDS 0.00, MFA 0.00, Isolation 0.30. Game value -6.20. |
+| 50 | **adapted** | Equilibrium in use first favours **Firewall** (the reference best defense for `state_1`), 49 rounds after the phase began. |
+| 53 | **re-solve** | Solve #18, estimate shifted 0.125. New mix: Firewall 1.00, IDS 0.00, MFA 0.00, Isolation 0.00. Game value -6.45. |
+| 61 | **re-solve** | Solve #19, estimate shifted 0.125. New mix: Firewall 0.83, IDS 0.00, MFA 0.00, Isolation 0.17. Game value -5.80. |
+| 64 | **re-solve** | Solve #20, estimate shifted 0.125. New mix: Firewall 0.34, IDS 0.00, MFA 0.00, Isolation 0.66. Game value -6.24. |
+| 67 | **re-solve** | Solve #21, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -6.28. |
+| 70 | **re-solve** | Solve #22, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -7.25. |
+| 73 | **re-solve** | Solve #23, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -7.25. |
+| 76 | **re-solve** | Solve #24, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -6.77. |
+| 79 | **re-solve** | Solve #25, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.26, Isolation 0.74. Game value -7.24. |
+| 82 | **re-solve** | Solve #26, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.67, Isolation 0.33. Game value -7.43. |
+| 85 | **re-solve** | Solve #27, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 1.00, Isolation 0.00. Game value -7.25. |
+| 88 | **re-solve** | Solve #28, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 1.00, Isolation 0.00. Game value -8.53. |
+| 93 | **re-solve** | Solve #29, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 1.00, Isolation 0.00. Game value -7.25. |
+| 96 | **re-solve** | Solve #30, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.67, Isolation 0.33. Game value -7.43. |
+| 99 | **re-solve** | Solve #31, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.26, Isolation 0.74. Game value -7.24. |
+| 101 | **THREAT SWITCH** | True threat state is now `state_2`: DDoS 0.15, Phishing 0.10, BruteForce 0.65, Malware 0.10 |
+| 102 | **re-solve** | Solve #32, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -6.28. |
+| 105 | **re-solve** | Solve #33, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -7.73. |
+| 108 | **re-solve** | Solve #34, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -9.18. |
+| 137 | **re-solve** | Solve #35, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -7.73. |
+| 140 | **re-solve** | Solve #36, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -6.28. |
+| 144 | **re-solve** | Solve #37, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.26, Isolation 0.74. Game value -6.58. |
+| 147 | **re-solve** | Solve #38, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.71, Isolation 0.29. Game value -6.71. |
+| 147 | **adapted** | Equilibrium in use first favours **MFA** (the reference best defense for `state_2`), 46 rounds after the phase began. |
+| 150 | **re-solve** | Solve #39, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 1.00, Isolation 0.00. Game value -6.83. |
+| 154 | **re-solve** | Solve #40, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 1.00, Isolation 0.00. Game value -7.25. |
+| 157 | **re-solve** | Solve #41, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 1.00, Isolation 0.00. Game value -5.97. |
+| 160 | **re-solve** | Solve #42, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.59, Isolation 0.41. Game value -6.12. |
+| 164 | **re-solve** | Solve #43, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.12, Isolation 0.88. Game value -5.62. |
+| 167 | **re-solve** | Solve #44, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -5.80. |
+| 170 | **re-solve** | Solve #45, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -7.25. |
+| 173 | **re-solve** | Solve #46, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -8.22. |
+| 182 | **re-solve** | Solve #47, estimate shifted 0.125. New mix: Firewall 0.00, IDS 0.00, MFA 0.00, Isolation 1.00. Game value -6.77. |
+| 185 | **re-solve** | Solve #48, estimate shifted 0.125. New mix: Firewall 0.01, IDS 0.00, MFA 0.00, Isolation 0.99. Game value -5.83. |
+| 188 | **re-solve** | Solve #49, estimate shifted 0.125. New mix: Firewall 0.51, IDS 0.00, MFA 0.00, Isolation 0.49. Game value -6.28. |
+| 191 | **re-solve** | Solve #50, estimate shifted 0.125. New mix: Firewall 0.96, IDS 0.00, MFA 0.00, Isolation 0.04. Game value -6.19. |
+| 194 | **re-solve** | Solve #51, estimate shifted 0.125. New mix: Firewall 1.00, IDS 0.00, MFA 0.00, Isolation 0.00. Game value -6.86. |
+| 200 | **re-solve** | Solve #52, estimate shifted 0.125. New mix: Firewall 0.90, IDS 0.00, MFA 0.00, Isolation 0.10. Game value -6.00. |
